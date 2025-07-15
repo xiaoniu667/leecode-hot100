@@ -1,4 +1,4 @@
-package leecode100.one;
+package leecode100.title1;
 
 import java.util.HashMap;
 

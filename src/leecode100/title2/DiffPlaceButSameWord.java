@@ -1,6 +1,5 @@
-package leecode100.two;
+package leecode100.title2;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**
