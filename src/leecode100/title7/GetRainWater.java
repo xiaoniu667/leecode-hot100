@@ -23,8 +23,8 @@ public class GetRainWater {
         //可以先用两数组存储每个位置左右两侧高度的最大值 用空间换时间
         int[] left = new int[height.length];
         int[] right = new int[height.length];
-        left[0] = 0;
-        right[height.length - 1] = 0;
+//        left[0] = 0;
+//        right[height.length - 1] = 0;
         for (int i = 1; i < height.length; i++) {
             left[i] = Math.max(left[i - 1], height[i - 1]);
         }
@@ -33,12 +33,13 @@ public class GetRainWater {
         }
         int total = 0;
         for (int i = 0; i < height.length; i++) {
-            //当前柱子可以接的雨水
-            int getWaterNumber = Math.min(left[i], right[i]) - height[i];
-            if(getWaterNumber<0){
-                getWaterNumber = 0;
-            }
-            total = total + getWaterNumber;
+//            //当前柱子可以接的雨水
+//            int getWaterNumber = Math.min(left[i], right[i]) - height[i];
+//            if(getWaterNumber<0){
+//                getWaterNumber = 0;
+//            }
+//            total = total + getWaterNumber;
+            total += Math.max(0, Math.min(left[i], right[i]) - height[i]);
         }
         return total;
     }
