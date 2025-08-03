@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了最小覆盖子串">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title13/MaxSubArraySum.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了最大子数组之和">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title14/MergeArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title1/SumOfTwoNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title1/SumOfTwoNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,7 @@
     "Application.MaxSliderWindows.executor": "Debug",
     "Application.MaxSubArraySum.executor": "Run",
     "Application.MaxWaterArea.executor": "Run",
+    "Application.MergeArray.executor": "Run",
     "Application.MinCoverSubString.executor": "Run",
     "Application.SumOfThreeNumbers.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -83,20 +85,7 @@
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title5\doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaxSubArraySum">
-    <configuration name="FindAllDiffPlaceWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title9.FindAllDiffPlaceWord" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MergeArray">
     <configuration name="KSumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title10.KSumSubArray" />
       <module name="leecode-hot100" />
@@ -136,6 +125,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MergeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title14.MergeArray" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinCoverSubString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title12.MinCoverSubString" />
       <module name="leecode-hot100" />
@@ -151,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeArray" />
         <item itemvalue="Application.MaxSubArraySum" />
         <item itemvalue="Application.MinCoverSubString" />
         <item itemvalue="Application.MaxSliderWindows" />
         <item itemvalue="Application.KSumSubArray" />
-        <item itemvalue="Application.FindAllDiffPlaceWord" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +187,8 @@
       <workItem from="1753437240589" duration="466000" />
       <workItem from="1753444515164" duration="4756000" />
       <workItem from="1753449995231" duration="13000" />
-      <workItem from="1754030137485" duration="4864000" />
+      <workItem from="1754030137485" duration="6725000" />
+      <workItem from="1754219857094" duration="2836000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -275,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754033479465</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完成了最大子数组之和">
+      <option name="closed" value="true" />
+      <created>1754035561744</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1754035561744</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +313,8 @@
     <MESSAGE value="完成了和为k的子数组" />
     <MESSAGE value="完成了滑动窗口最大值" />
     <MESSAGE value="完成了最小覆盖子串" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了最小覆盖子串" />
+    <MESSAGE value="完成了最大子数组之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了最大子数组之和" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

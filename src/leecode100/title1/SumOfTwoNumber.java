@@ -14,10 +14,10 @@ import java.util.HashMap;
 public class SumOfTwoNumber {
 
     /*
-     思路：利用hashmap时间复杂度可以降到o1
-          hashmap以key value存储，其中key存储value，value存储index
-          diff = target-num[i]
-          遍历nums如果这个diff在hashmap的key中存在，直接返回i和hashmap.get(diff)
+         思路：利用hashmap时间复杂度可以降到o1
+              hashmap以key value存储，其中key存储value，value存储index
+              diff = target-num[i]
+              遍历nums如果这个diff在hashmap的key中存在，直接返回i和hashmap.get(diff)
      */
 
 
