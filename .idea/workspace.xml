@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了合并区间 使用正常的排序判断即可解决">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title15/RotateArray.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了轮转数组">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title16/MutifyArrayWithoutSelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title17/LackFirstPostiveNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,12 +54,14 @@
     "Application.FindAllDiffPlaceWord.executor": "Debug",
     "Application.GetRainWater.executor": "Run",
     "Application.KSumSubArray.executor": "Debug",
+    "Application.LackFirstPostiveNumber.executor": "Run",
     "Application.LongestSubStringLength.executor": "Run",
     "Application.MaxSliderWindows.executor": "Debug",
     "Application.MaxSubArraySum.executor": "Run",
     "Application.MaxWaterArea.executor": "Run",
     "Application.MergeArray.executor": "Run",
     "Application.MinCoverSubString.executor": "Run",
+    "Application.MutifyArrayWithoutSelf.executor": "Run",
     "Application.RotateArray.executor": "Run",
     "Application.SumOfThreeNumbers.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -85,13 +88,13 @@
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title5\doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RotateArray">
-    <configuration name="MaxSliderWindows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title11.MaxSliderWindows" />
+  <component name="RunManager" selected="Application.LackFirstPostiveNumber">
+    <configuration name="LackFirstPostiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title17.LackFirstPostiveNumber" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title11.*" />
+          <option name="PATTERN" value="leecode100.title17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinCoverSubString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title12.MinCoverSubString" />
+    <configuration name="MutifyArrayWithoutSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title16.MutifyArrayWithoutSelf" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title12.*" />
+          <option name="PATTERN" value="leecode100.title16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LackFirstPostiveNumber" />
+        <item itemvalue="Application.MutifyArrayWithoutSelf" />
         <item itemvalue="Application.RotateArray" />
         <item itemvalue="Application.MergeArray" />
         <item itemvalue="Application.MaxSubArraySum" />
-        <item itemvalue="Application.MinCoverSubString" />
-        <item itemvalue="Application.MaxSliderWindows" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +191,8 @@
       <workItem from="1753444515164" duration="4756000" />
       <workItem from="1753449995231" duration="13000" />
       <workItem from="1754030137485" duration="6725000" />
-      <workItem from="1754219857094" duration="4215000" />
+      <workItem from="1754219857094" duration="4314000" />
+      <workItem from="1754389208628" duration="5561000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -294,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754222875958</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="完成了轮转数组">
+      <option name="closed" value="true" />
+      <created>1754224361985</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1754224361985</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,9 +335,19 @@
     <MESSAGE value="完成了最小覆盖子串" />
     <MESSAGE value="完成了最大子数组之和" />
     <MESSAGE value="完成了合并区间 使用正常的排序判断即可解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了合并区间 使用正常的排序判断即可解决" />
+    <MESSAGE value="完成了轮转数组" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了轮转数组" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leecode100/title17/LackFirstPostiveNumber.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="hashMap.entrySet().toArray()[1]" />
