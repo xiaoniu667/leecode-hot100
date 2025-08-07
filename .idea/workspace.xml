@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了轮转数组">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title16/MutifyArrayWithoutSelf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title17/LackFirstPostiveNumber.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了除自身之外的乘积和、缺失的第一个正数">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title19/PrintRotateMaxtri.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title20/RotateMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title18/MaxtriSetZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title18/MaxtriSetZero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +60,12 @@
     "Application.MaxSliderWindows.executor": "Debug",
     "Application.MaxSubArraySum.executor": "Run",
     "Application.MaxWaterArea.executor": "Run",
+    "Application.MaxtriSetZero.executor": "Run",
     "Application.MergeArray.executor": "Run",
     "Application.MinCoverSubString.executor": "Run",
     "Application.MutifyArrayWithoutSelf.executor": "Run",
     "Application.RotateArray.executor": "Run",
+    "Application.RotateMaxtri.executor": "Run",
     "Application.SumOfThreeNumbers.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -77,6 +80,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,7 +92,7 @@
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title5\doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LackFirstPostiveNumber">
+  <component name="RunManager" selected="Application.PrintRotateMaxtri">
     <configuration name="LackFirstPostiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title17.LackFirstPostiveNumber" />
       <module name="leecode-hot100" />
@@ -102,25 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSubArraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title13.MaxSubArraySum" />
+    <configuration name="MaxtriSetZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title18.MaxtriSetZero" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title14.MergeArray" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title14.*" />
+          <option name="PATTERN" value="leecode100.title18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,6 +125,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leecode100.title16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintRotateMaxtri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title19.PrintRotateMaxtri" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintRotateMaxtri" />
+        <item itemvalue="Application.MaxtriSetZero" />
         <item itemvalue="Application.LackFirstPostiveNumber" />
         <item itemvalue="Application.MutifyArrayWithoutSelf" />
         <item itemvalue="Application.RotateArray" />
-        <item itemvalue="Application.MergeArray" />
-        <item itemvalue="Application.MaxSubArraySum" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +196,10 @@
       <workItem from="1753449995231" duration="13000" />
       <workItem from="1754030137485" duration="6725000" />
       <workItem from="1754219857094" duration="4314000" />
-      <workItem from="1754389208628" duration="5561000" />
+      <workItem from="1754389208628" duration="5869000" />
+      <workItem from="1754460798916" duration="5054000" />
+      <workItem from="1754466332094" duration="9000" />
+      <workItem from="1754555952295" duration="3847000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -306,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754224361985</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="完成了除自身之外的乘积和、缺失的第一个正数">
+      <option name="closed" value="true" />
+      <created>1754405725931</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1754405725931</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,18 +351,10 @@
     <MESSAGE value="完成了最大子数组之和" />
     <MESSAGE value="完成了合并区间 使用正常的排序判断即可解决" />
     <MESSAGE value="完成了轮转数组" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了轮转数组" />
+    <MESSAGE value="完成了除自身之外的乘积和、缺失的第一个正数" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了除自身之外的乘积和、缺失的第一个正数" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leecode100/title17/LackFirstPostiveNumber.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="hashMap.entrySet().toArray()[1]" />
