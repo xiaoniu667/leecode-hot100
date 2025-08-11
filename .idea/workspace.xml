@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了打印旋转矩阵">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title21/SearchTwoDimensionalMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title22/IntersectingNode.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了旋转矩阵，搜索二维矩阵，相交链表">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/utils/PrintListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title23/ReverseListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title24/PalindromeLinkNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/title20/RotateMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title20/RotateMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title22/IntersectingNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title22/IntersectingNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,8 @@
     "Application.MergeArray.executor": "Run",
     "Application.MinCoverSubString.executor": "Run",
     "Application.MutifyArrayWithoutSelf.executor": "Run",
+    "Application.PalindromeLinkNode.executor": "Debug",
+    "Application.ReverseListNode.executor": "Run",
     "Application.RotateArray.executor": "Run",
     "Application.RotateMatrix.executor": "Run",
     "Application.RotateMaxtri.executor": "Run",
@@ -95,7 +97,7 @@
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title5\doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IntersectingNode">
+  <component name="RunManager" selected="Application.PalindromeLinkNode">
     <configuration name="IntersectingNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title22.IntersectingNode" />
       <module name="leecode-hot100" />
@@ -109,25 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LackFirstPostiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title17.LackFirstPostiveNumber" />
+    <configuration name="PalindromeLinkNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title24.PalindromeLinkNode" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxtriSetZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title18.MaxtriSetZero" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title18.*" />
+          <option name="PATTERN" value="leecode100.title24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,6 +130,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leecode100.title19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title23.ReverseListNode" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PalindromeLinkNode" />
+        <item itemvalue="Application.ReverseListNode" />
         <item itemvalue="Application.IntersectingNode" />
         <item itemvalue="Application.RotateMatrix" />
         <item itemvalue="Application.PrintRotateMaxtri" />
-        <item itemvalue="Application.MaxtriSetZero" />
-        <item itemvalue="Application.LackFirstPostiveNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +207,9 @@
       <workItem from="1754555952295" duration="4476000" />
       <workItem from="1754565460627" duration="166000" />
       <workItem from="1754631090565" duration="5926000" />
-      <workItem from="1754642443535" duration="4588000" />
+      <workItem from="1754642443535" duration="4717000" />
+      <workItem from="1754720401158" duration="1326000" />
+      <workItem from="1754887967947" duration="6580000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -335,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754561697448</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成了旋转矩阵，搜索二维矩阵，相交链表">
+      <option name="closed" value="true" />
+      <created>1754647710501</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1754647710501</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +379,8 @@
     <MESSAGE value="完成了轮转数组" />
     <MESSAGE value="完成了除自身之外的乘积和、缺失的第一个正数" />
     <MESSAGE value="完成了打印旋转矩阵" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了打印旋转矩阵" />
+    <MESSAGE value="完成了旋转矩阵，搜索二维矩阵，相交链表" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了旋转矩阵，搜索二维矩阵，相交链表" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

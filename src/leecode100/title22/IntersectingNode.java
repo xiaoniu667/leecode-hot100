@@ -18,13 +18,10 @@ public class IntersectingNode {
     public static void main(String[] args) {
         // 创建共享节点：4 -> 5
         ListNode common = new ListNode(4, new ListNode(5, null));
-
         // 链表 A: 1 -> 2 -> 3 -> 4 -> 5
         ListNode headA = new ListNode(1, new ListNode(2, new ListNode(3, common)));
-
         // 链表 B: 6 -> 4 -> 5
         ListNode headB = new ListNode(6, common);
-
         ListNode intersectionNode = new IntersectingNode().getIntersectionNode(headA, headB);
         System.out.println(intersectionNode != null ? intersectionNode.val : "null");
     }
