@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了旋转矩阵，搜索二维矩阵，相交链表">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/utils/PrintListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title23/ReverseListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title24/PalindromeLinkNode.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了相交链表、反转链表、回文链表">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title25/CycleLinkNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title26/CycleLinkNode2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/title22/IntersectingNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title22/IntersectingNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/DataStruct/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title24/PalindromeLinkNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title24/PalindromeLinkNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CycleLinkNode.executor": "Debug",
     "Application.FindAllDiffPlaceWord.executor": "Debug",
     "Application.GetRainWater.executor": "Run",
     "Application.IntersectingNode.executor": "Run",
@@ -96,8 +97,24 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title5\doc" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leecode100.title26" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.PalindromeLinkNode">
+  <component name="RunManager" selected="Application.CycleLinkNode">
+    <configuration name="CycleLinkNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title25.CycleLinkNode" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title25.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntersectingNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title22.IntersectingNode" />
       <module name="leecode-hot100" />
@@ -117,19 +134,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leecode100.title24.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrintRotateMaxtri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title19.PrintRotateMaxtri" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CycleLinkNode" />
         <item itemvalue="Application.PalindromeLinkNode" />
         <item itemvalue="Application.ReverseListNode" />
         <item itemvalue="Application.IntersectingNode" />
         <item itemvalue="Application.RotateMatrix" />
-        <item itemvalue="Application.PrintRotateMaxtri" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +213,9 @@
       <workItem from="1754631090565" duration="5926000" />
       <workItem from="1754642443535" duration="4717000" />
       <workItem from="1754720401158" duration="1326000" />
-      <workItem from="1754887967947" duration="6580000" />
+      <workItem from="1754887967947" duration="6788000" />
+      <workItem from="1754977189476" duration="2000" />
+      <workItem from="1754984963663" duration="5135000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -347,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754647710501</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="完成了相交链表、反转链表、回文链表">
+      <option name="closed" value="true" />
+      <created>1754895945580</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1754895945580</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +394,8 @@
     <MESSAGE value="完成了除自身之外的乘积和、缺失的第一个正数" />
     <MESSAGE value="完成了打印旋转矩阵" />
     <MESSAGE value="完成了旋转矩阵，搜索二维矩阵，相交链表" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了旋转矩阵，搜索二维矩阵，相交链表" />
+    <MESSAGE value="完成了相交链表、反转链表、回文链表" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了相交链表、反转链表、回文链表" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
