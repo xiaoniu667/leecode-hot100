@@ -4,7 +4,7 @@ import leecode100.DataStruct.ListNode;
 
 public class PrintListNode {
     // 封装的打印链表方法
-    public static void printList(ListNode head) {
+    public static void printListNode(ListNode head) {
         ListNode current = head;
         if (current == null) {
             System.out.println("Empty list");

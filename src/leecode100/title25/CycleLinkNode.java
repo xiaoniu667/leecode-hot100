@@ -28,10 +28,6 @@ public class CycleLinkNode {
 //        node2.next = node3;
 //        node3.next = node2; // 形成环
 //        System.out.println("有环链表测试结果: " + solution.hasCycle(head1)); // 输出: true
-
-
-
-
         ListNode head1 = new ListNode(1);
         boolean result = new CycleLinkNode().hasCycle(head1);
         System.out.println(result);

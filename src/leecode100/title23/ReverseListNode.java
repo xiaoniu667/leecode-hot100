@@ -1,10 +1,8 @@
 package leecode100.title23;
 
 import leecode100.DataStruct.ListNode;
+import leecode100.DataStruct.utils.PrintListNode;
 
-import java.util.List;
-
-import static leecode100.DataStruct.utils.PrintListNode.printList;
 
 /**
  * 反转链表
@@ -32,7 +30,7 @@ public class ReverseListNode {
     public static void main(String[] args) {
         ListNode headA = new ListNode(1, new ListNode(2, new ListNode(3, null)));
         ListNode listNode = new ReverseListNode().reverseList(headA);
-        printList(listNode);
+        PrintListNode.printListNode(listNode);
     }
 
     //    1 -> 2
