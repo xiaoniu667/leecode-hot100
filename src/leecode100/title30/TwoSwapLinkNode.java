@@ -1,7 +1,7 @@
 package leecode100.title30;
 
 import leecode100.DataStruct.ListNode;
-import leecode100.DataStruct.utils.PrintListNode;
+import leecode100.DataStruct.utils.ListNodeUtils;
 
 /**
  * 题目：
@@ -57,7 +57,7 @@ public class TwoSwapLinkNode {
     public static void main(String[] args) {
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, null))));
         ListNode listNode = new TwoSwapLinkNode().swapPairs(head);
-        PrintListNode.printListNode(listNode);
+        ListNodeUtils.printListNode(listNode);
     }
 
     public ListNode swapPairs(ListNode head) {

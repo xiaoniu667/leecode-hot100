@@ -1,9 +1,8 @@
 package leecode100.title29;
 
 import leecode100.DataStruct.ListNode;
-import leecode100.DataStruct.utils.PrintListNode;
 
-import static leecode100.DataStruct.utils.PrintListNode.printListNode;
+import static leecode100.DataStruct.utils.ListNodeUtils.printListNode;
 
 /**
  * 题目：
