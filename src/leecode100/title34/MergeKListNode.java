@@ -1,6 +1,11 @@
 package leecode100.title34;
 
 import leecode100.DataStruct.ListNode;
+import leecode100.DataStruct.utils.ListNodeUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 题目：合并 K 个升序链表
@@ -17,13 +22,47 @@ import leecode100.DataStruct.ListNode;
 public class MergeKListNode {
 
     /**
-     * 思路：
+     * 思路：将链表中的数据放入到数组之中，然后进行排序，排完序之后再合并成链表
      */
     public static void main(String[] args) {
-
+        ListNode head = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,null))));
+        ListNode head1 = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,null))));
+        ListNode head2 = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,null))));
+        ArrayList<ListNode> lists = new ArrayList<>();
+        lists.add(head);
+        lists.add(head1);
+        lists.add(head2);
+        ListNode[] listNodes = lists.toArray(new ListNode[0]);
+        ListNode listNode = new MergeKListNode().mergeKLists(listNodes);
+        ListNodeUtils.printListNode(listNode);
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
-
+        int length = 0;
+        for (int i = 0; i < lists.length; i++) {
+            ListNode currentNode = lists[i];
+            while (currentNode!=null){
+                currentNode = currentNode.next;
+                length++;
+            }
+        }
+        int[] nums = new int[length];
+        length = 0;
+        for (int i = 0; i < lists.length; i++) {
+            ListNode currentNode = lists[i];
+            while (currentNode!=null){
+                nums[length] = currentNode.val;
+                currentNode = currentNode.next;
+                length++;
+            }
+        }
+        Arrays.sort(nums);
+        ListNode dummy = new ListNode(0);
+        ListNode current = dummy;
+        for (int i = 0; i < nums.length; i++) {
+            current.next = new ListNode(nums[i]);
+            current = current.next;
+        }
+        return dummy.next;
     }
 }

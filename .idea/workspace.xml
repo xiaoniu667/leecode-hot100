@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了两两节点的交换、K个节点的交换">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title32/RandomLinkNodeCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title33/SortLinkNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title34/MergeKListNode.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了随机链表复制和升序链表">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/DataStruct/utils/PrintListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/utils/ListNodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/title23/ReverseListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title23/ReverseListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/title29/DeleteFromEndN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title29/DeleteFromEndN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/title30/TwoSwapLinkNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title30/TwoSwapLinkNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title34/MergeKListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title34/MergeKListNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,49 +48,49 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CycleLinkNode.executor": "Debug",
-    "Application.DeleteFromEndN.executor": "Run",
-    "Application.FindAllDiffPlaceWord.executor": "Debug",
-    "Application.GetRainWater.executor": "Run",
-    "Application.IntersectingNode.executor": "Run",
-    "Application.KSumSubArray.executor": "Debug",
-    "Application.LackFirstPostiveNumber.executor": "Run",
-    "Application.LongestSubStringLength.executor": "Run",
-    "Application.MaxSliderWindows.executor": "Debug",
-    "Application.MaxSubArraySum.executor": "Run",
-    "Application.MaxWaterArea.executor": "Run",
-    "Application.MaxtriSetZero.executor": "Run",
-    "Application.MergeArray.executor": "Run",
-    "Application.MinCoverSubString.executor": "Run",
-    "Application.MutifyArrayWithoutSelf.executor": "Run",
-    "Application.PalindromeLinkNode.executor": "Debug",
-    "Application.RandomLinkNodeCopy.executor": "Debug",
-    "Application.ReverseListNode.executor": "Run",
-    "Application.RotateArray.executor": "Run",
-    "Application.RotateMatrix.executor": "Run",
-    "Application.RotateMaxtri.executor": "Run",
-    "Application.SortLinkNode.executor": "Debug",
-    "Application.SumOfThreeNumbers.executor": "Run",
-    "Application.TwoSwapLinkNode.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/code_new/leecode-hot100/src/leecode100/title7",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CycleLinkNode.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DeleteFromEndN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindAllDiffPlaceWord.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.GetRainWater.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IntersectingNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KSumSubArray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LackFirstPostiveNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LongestSubStringLength.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxSliderWindows.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MaxSubArraySum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxWaterArea.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxtriSetZero.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MinCoverSubString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MutifyArrayWithoutSelf.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeLinkNode.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.RandomLinkNodeCopy.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ReverseListNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RotateArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RotateMatrix.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RotateMaxtri.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortLinkNode.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SumOfThreeNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSwapLinkNode.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code_new/leecode-hot100/src/leecode100/title7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title7" />
@@ -109,13 +102,13 @@
       <recent name="leecode100.title26" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SortLinkNode">
-    <configuration name="CycleLinkNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title25.CycleLinkNode" />
+  <component name="RunManager" selected="Application.MergeKListNode">
+    <configuration name="DeleteFromEndN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title29.DeleteFromEndN" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title25.*" />
+          <option name="PATTERN" value="leecode100.title29.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteFromEndN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title29.DeleteFromEndN" />
+    <configuration name="MergeKListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title34.MergeKListNode" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title29.*" />
+          <option name="PATTERN" value="leecode100.title34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeKListNode" />
         <item itemvalue="Application.SortLinkNode" />
         <item itemvalue="Application.RandomLinkNodeCopy" />
         <item itemvalue="Application.TwoSwapLinkNode" />
         <item itemvalue="Application.DeleteFromEndN" />
-        <item itemvalue="Application.CycleLinkNode" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +223,8 @@
       <workItem from="1755239841783" duration="8000" />
       <workItem from="1755410128207" duration="3501000" />
       <workItem from="1755771732672" duration="6901000" />
-      <workItem from="1755845747075" duration="3534000" />
+      <workItem from="1755845747075" duration="3688000" />
+      <workItem from="1756307719821" duration="1524000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -408,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755781189907</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="完成了随机链表复制和升序链表">
+      <option name="closed" value="true" />
+      <created>1755849428249</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1755849428249</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +448,8 @@
     <MESSAGE value="完成了合并升序列表" />
     <MESSAGE value="完成了两数相加、删除倒数第n个结点" />
     <MESSAGE value="完成了两两节点的交换、K个节点的交换" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了两两节点的交换、K个节点的交换" />
+    <MESSAGE value="完成了随机链表复制和升序链表" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了随机链表复制和升序链表" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
