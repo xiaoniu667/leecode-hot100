@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了合并K个链表">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/DataStruct/utils/TreeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title35/LRUCacheDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title36/TreePostOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title37/TreeMaxDeep.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了LRU缓存、中序遍历二叉树、树的最大深度">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title38/ReverseTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title39/SymmetryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title40/DiameterTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +54,7 @@
   "keyToString": {
     "Application.CycleLinkNode.executor": "Debug",
     "Application.DeleteFromEndN.executor": "Run",
+    "Application.DiameterTree.executor": "Debug",
     "Application.FindAllDiffPlaceWord.executor": "Debug",
     "Application.GetRainWater.executor": "Run",
     "Application.IntersectingNode.executor": "Run",
@@ -74,12 +73,13 @@
     "Application.PalindromeLinkNode.executor": "Debug",
     "Application.RandomLinkNodeCopy.executor": "Debug",
     "Application.ReverseListNode.executor": "Run",
+    "Application.ReverseTree.executor": "Debug",
     "Application.RotateArray.executor": "Run",
     "Application.RotateMatrix.executor": "Run",
     "Application.RotateMaxtri.executor": "Run",
     "Application.SortLinkNode.executor": "Debug",
     "Application.SumOfThreeNumbers.executor": "Run",
-    "Application.TreeMaxDeep.executor": "Debug",
+    "Application.TreeMaxDeep.executor": "Run",
     "Application.TwoSwapLinkNode.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -109,7 +109,20 @@
       <recent name="leecode100.title26" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TreeMaxDeep">
+  <component name="RunManager" selected="Application.DiameterTree">
+    <configuration name="DiameterTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title40.DiameterTree" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title40.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LRUCacheDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title35.LRUCacheDemo" />
       <module name="leecode-hot100" />
@@ -136,25 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomLinkNodeCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title32.RandomLinkNodeCopy" />
+    <configuration name="ReverseTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title38.ReverseTree" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title32.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortLinkNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title33.SortLinkNode" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title33.*" />
+          <option name="PATTERN" value="leecode100.title38.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DiameterTree" />
+        <item itemvalue="Application.ReverseTree" />
         <item itemvalue="Application.TreeMaxDeep" />
         <item itemvalue="Application.LRUCacheDemo" />
         <item itemvalue="Application.MergeKListNode" />
-        <item itemvalue="Application.SortLinkNode" />
-        <item itemvalue="Application.RandomLinkNodeCopy" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +232,8 @@
       <workItem from="1755771732672" duration="6901000" />
       <workItem from="1755845747075" duration="3688000" />
       <workItem from="1756307719821" duration="2655000" />
-      <workItem from="1756383096388" duration="5422000" />
+      <workItem from="1756383096388" duration="5585000" />
+      <workItem from="1756441970297" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -426,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756309362291</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="完成了LRU缓存、中序遍历二叉树、树的最大深度">
+      <option name="closed" value="true" />
+      <created>1756388744442</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1756388744442</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,9 +475,19 @@
     <MESSAGE value="完成了两两节点的交换、K个节点的交换" />
     <MESSAGE value="完成了随机链表复制和升序链表" />
     <MESSAGE value="完成了合并K个链表" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了合并K个链表" />
+    <MESSAGE value="完成了LRU缓存、中序遍历二叉树、树的最大深度" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了LRU缓存、中序遍历二叉树、树的最大深度" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leecode100/title40/DiameterTree.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="hashMap.entrySet().toArray()[1]" />
