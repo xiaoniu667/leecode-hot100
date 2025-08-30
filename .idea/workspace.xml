@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了LRU缓存、中序遍历二叉树、树的最大深度">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title38/ReverseTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title39/SymmetryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title40/DiameterTree.java" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了最大直径、翻转二叉树、对称二叉树">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title41/LeverOrderTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title42/OrderedNumberToOrderedTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title43/VerfiySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +62,7 @@
     "Application.KSumSubArray.executor": "Debug",
     "Application.LRUCacheDemo.executor": "Debug",
     "Application.LackFirstPostiveNumber.executor": "Run",
+    "Application.LeverOrderTree.executor": "Run",
     "Application.LongestSubStringLength.executor": "Run",
     "Application.MaxSliderWindows.executor": "Debug",
     "Application.MaxSubArraySum.executor": "Run",
@@ -81,6 +83,7 @@
     "Application.SumOfThreeNumbers.executor": "Run",
     "Application.TreeMaxDeep.executor": "Run",
     "Application.TwoSwapLinkNode.executor": "Run",
+    "Application.VerfiySearchTree.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -109,7 +112,7 @@
       <recent name="leecode100.title26" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DiameterTree">
+  <component name="RunManager" selected="Application.VerfiySearchTree">
     <configuration name="DiameterTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title40.DiameterTree" />
       <module name="leecode-hot100" />
@@ -123,25 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCacheDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title35.LRUCacheDemo" />
+    <configuration name="LeverOrderTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title41.LeverOrderTree" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title35.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeKListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title34.MergeKListNode" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title34.*" />
+          <option name="PATTERN" value="leecode100.title41.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,13 +165,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VerfiySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title43.VerfiySearchTree" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title43.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VerfiySearchTree" />
+        <item itemvalue="Application.LeverOrderTree" />
         <item itemvalue="Application.DiameterTree" />
         <item itemvalue="Application.ReverseTree" />
         <item itemvalue="Application.TreeMaxDeep" />
-        <item itemvalue="Application.LRUCacheDemo" />
-        <item itemvalue="Application.MergeKListNode" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +236,11 @@
       <workItem from="1755845747075" duration="3688000" />
       <workItem from="1756307719821" duration="2655000" />
       <workItem from="1756383096388" duration="5585000" />
-      <workItem from="1756441970297" duration="3356000" />
+      <workItem from="1756441970297" duration="3447000" />
+      <workItem from="1756471986607" duration="1200000" />
+      <workItem from="1756474037556" duration="768000" />
+      <workItem from="1756533593221" duration="87000" />
+      <workItem from="1756545574549" duration="2887000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -435,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756388744442</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="完成了最大直径、翻转二叉树、对称二叉树">
+      <option name="closed" value="true" />
+      <created>1756445402220</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1756445402220</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,18 +491,10 @@
     <MESSAGE value="完成了随机链表复制和升序链表" />
     <MESSAGE value="完成了合并K个链表" />
     <MESSAGE value="完成了LRU缓存、中序遍历二叉树、树的最大深度" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了LRU缓存、中序遍历二叉树、树的最大深度" />
+    <MESSAGE value="完成了最大直径、翻转二叉树、对称二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了最大直径、翻转二叉树、对称二叉树" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leecode100/title40/DiameterTree.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="hashMap.entrySet().toArray()[1]" />
