@@ -234,7 +234,7 @@
       <workItem from="1756471986607" duration="1200000" />
       <workItem from="1756474037556" duration="768000" />
       <workItem from="1756533593221" duration="87000" />
-      <workItem from="1756545574549" duration="3216000" />
+      <workItem from="1756545574549" duration="3323000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -452,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756548709838</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树">
+      <option name="closed" value="true" />
+      <created>1756548851941</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1756548851941</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
