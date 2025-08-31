@@ -3,6 +3,7 @@ package leecode100.title43;
 import leecode100.DataStruct.TreeNode;
 
 import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * 验证二叉搜索树

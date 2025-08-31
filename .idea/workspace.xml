@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title44/SearchKNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title45/TreeRightView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title46/TreeNodeToLinkedNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title43/VerfiySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title43/VerfiySearchTree.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,56 +52,56 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CycleLinkNode.executor": "Debug",
-    "Application.DeleteFromEndN.executor": "Run",
-    "Application.DiameterTree.executor": "Debug",
-    "Application.FindAllDiffPlaceWord.executor": "Debug",
-    "Application.GetRainWater.executor": "Run",
-    "Application.IntersectingNode.executor": "Run",
-    "Application.KSumSubArray.executor": "Debug",
-    "Application.LRUCacheDemo.executor": "Debug",
-    "Application.LackFirstPostiveNumber.executor": "Run",
-    "Application.LeverOrderTree.executor": "Run",
-    "Application.LongestSubStringLength.executor": "Run",
-    "Application.MaxSliderWindows.executor": "Debug",
-    "Application.MaxSubArraySum.executor": "Run",
-    "Application.MaxWaterArea.executor": "Run",
-    "Application.MaxtriSetZero.executor": "Run",
-    "Application.MergeArray.executor": "Run",
-    "Application.MergeKListNode.executor": "Run",
-    "Application.MinCoverSubString.executor": "Run",
-    "Application.MutifyArrayWithoutSelf.executor": "Run",
-    "Application.PalindromeLinkNode.executor": "Debug",
-    "Application.RandomLinkNodeCopy.executor": "Debug",
-    "Application.ReverseListNode.executor": "Run",
-    "Application.ReverseTree.executor": "Debug",
-    "Application.RotateArray.executor": "Run",
-    "Application.RotateMatrix.executor": "Run",
-    "Application.RotateMaxtri.executor": "Run",
-    "Application.SortLinkNode.executor": "Debug",
-    "Application.SumOfThreeNumbers.executor": "Run",
-    "Application.TreeMaxDeep.executor": "Run",
-    "Application.TwoSwapLinkNode.executor": "Run",
-    "Application.VerfiySearchTree.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/code_new/leecode-hot100/src/leecode100/title7",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CycleLinkNode.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DeleteFromEndN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DiameterTree.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.FindAllDiffPlaceWord.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.GetRainWater.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IntersectingNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KSumSubArray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LRUCacheDemo.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LackFirstPostiveNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeverOrderTree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LongestSubStringLength.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxSliderWindows.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MaxSubArraySum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxWaterArea.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxtriSetZero.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeKListNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MinCoverSubString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MutifyArrayWithoutSelf.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeLinkNode.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.RandomLinkNodeCopy.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ReverseListNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseTree.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.RotateArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RotateMatrix.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RotateMaxtri.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortLinkNode.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SumOfThreeNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TreeMaxDeep.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSwapLinkNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VerfiySearchTree.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code_new/leecode-hot100/src/leecode100/title7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\code_new\leecode-hot100\src\leecode100\title7" />
@@ -235,6 +242,9 @@
       <workItem from="1756474037556" duration="768000" />
       <workItem from="1756533593221" duration="87000" />
       <workItem from="1756545574549" duration="3323000" />
+      <workItem from="1756548946850" duration="21000" />
+      <workItem from="1756564894825" duration="155000" />
+      <workItem from="1756619930829" duration="11203000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -460,7 +470,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756548851941</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树">
+      <option name="closed" value="true" />
+      <created>1756548957160</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1756548957160</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
