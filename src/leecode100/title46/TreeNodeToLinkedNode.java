@@ -35,5 +35,4 @@ public class TreeNodeToLinkedNode {
         current.right = rightTemp;
     }
 
-
 }

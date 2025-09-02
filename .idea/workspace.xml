@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title47/CreateTreeFromPreAndPostOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了前序遍历和中序遍历构造二叉树">
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title48/SumOfRoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title46/TreeNodeToLinkedNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title46/TreeNodeToLinkedNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;xiaoniu667&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/xiaoniu667/leecode-hot100.git&quot;,
-    &quot;accountId&quot;: &quot;548f2e9b-6a09-4624-8521-accdb9f16e1e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/xiaoniu667/leecode-hot100.git",
+    "accountId": "734c0fe6-7b68-4074-9f77-1c9881ae339c"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -79,6 +79,7 @@
     "Application.RotateMatrix.executor": "Run",
     "Application.RotateMaxtri.executor": "Run",
     "Application.SortLinkNode.executor": "Debug",
+    "Application.SumOfRoad.executor": "Run",
     "Application.SumOfThreeNumbers.executor": "Run",
     "Application.TreeMaxDeep.executor": "Run",
     "Application.TwoSwapLinkNode.executor": "Run",
@@ -111,7 +112,7 @@
       <recent name="leecode100.title26" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CreateTreeFromPreAndPostOrder">
+  <component name="RunManager" selected="Application.SumOfRoad">
     <configuration name="CreateTreeFromPreAndPostOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title47.CreateTreeFromPreAndPostOrder" />
       <module name="leecode-hot100" />
@@ -151,12 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title38.ReverseTree" />
+    <configuration name="SumOfRoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title48.SumOfRoad" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leecode100.title38.*" />
+          <option name="PATTERN" value="leecode100.title48.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SumOfRoad" />
         <item itemvalue="Application.CreateTreeFromPreAndPostOrder" />
         <item itemvalue="Application.VerfiySearchTree" />
         <item itemvalue="Application.LeverOrderTree" />
         <item itemvalue="Application.DiameterTree" />
-        <item itemvalue="Application.ReverseTree" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +244,8 @@
       <workItem from="1756548946850" duration="21000" />
       <workItem from="1756564894825" duration="155000" />
       <workItem from="1756619930829" duration="11203000" />
-      <workItem from="1756708176790" duration="2570000" />
+      <workItem from="1756708176790" duration="2779000" />
+      <workItem from="1756795272524" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />
@@ -477,7 +479,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756548957160</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="完成了前序遍历和中序遍历构造二叉树">
+      <option name="closed" value="true" />
+      <created>1756711019347</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1756711019347</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成了盛水最大面积" />
     <MESSAGE value="完成了三数之和" />
     <MESSAGE value="完成了接雨水" />
     <MESSAGE value="完成了无重复字符的最长子串" />
@@ -520,18 +529,10 @@
     <MESSAGE value="完成了LRU缓存、中序遍历二叉树、树的最大深度" />
     <MESSAGE value="完成了最大直径、翻转二叉树、对称二叉树" />
     <MESSAGE value="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了层序遍历二叉树，数组转为二叉搜索树，验证搜索树" />
+    <MESSAGE value="完成了前序遍历和中序遍历构造二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了前序遍历和中序遍历构造二叉树" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leecode100/title47/CreateTreeFromPreAndPostOrder.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="hashMap.entrySet().toArray()[1]" />
