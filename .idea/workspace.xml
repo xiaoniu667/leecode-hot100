@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b43c030-45da-4ec2-8442-6099bb9a8936" name="Changes" comment="完成了前序遍历和中序遍历构造二叉树">
-      <change afterPath="$PROJECT_DIR$/src/leecode100/title48/SumOfRoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leecode100/title49/TheLeatestCommonAncestor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode100/title46/TreeNodeToLinkedNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title46/TreeNodeToLinkedNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leecode100/title48/SumOfRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode100/title48/SumOfRoad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -30,12 +31,12 @@
     &quot;assignee&quot;: &quot;xiaoniu667&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/xiaoniu667/leecode-hot100.git",
-    "accountId": "734c0fe6-7b68-4074-9f77-1c9881ae339c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/xiaoniu667/leecode-hot100.git&quot;,
+    &quot;accountId&quot;: &quot;548f2e9b-6a09-4624-8521-accdb9f16e1e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -81,6 +82,7 @@
     "Application.SortLinkNode.executor": "Debug",
     "Application.SumOfRoad.executor": "Run",
     "Application.SumOfThreeNumbers.executor": "Run",
+    "Application.TheLeatestCommonAncestor.executor": "Run",
     "Application.TreeMaxDeep.executor": "Run",
     "Application.TwoSwapLinkNode.executor": "Run",
     "Application.VerfiySearchTree.executor": "Run",
@@ -112,26 +114,13 @@
       <recent name="leecode100.title26" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SumOfRoad">
+  <component name="RunManager" selected="Application.TheLeatestCommonAncestor">
     <configuration name="CreateTreeFromPreAndPostOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title47.CreateTreeFromPreAndPostOrder" />
       <module name="leecode-hot100" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leecode100.title47.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiameterTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leecode100.title40.DiameterTree" />
-      <module name="leecode-hot100" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leecode100.title40.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,6 +154,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TheLeatestCommonAncestor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leecode100.title49.TheLeatestCommonAncestor" />
+      <module name="leecode-hot100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leecode100.title49.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VerfiySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leecode100.title43.VerfiySearchTree" />
       <module name="leecode-hot100" />
@@ -180,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TheLeatestCommonAncestor" />
         <item itemvalue="Application.SumOfRoad" />
         <item itemvalue="Application.CreateTreeFromPreAndPostOrder" />
         <item itemvalue="Application.VerfiySearchTree" />
         <item itemvalue="Application.LeverOrderTree" />
-        <item itemvalue="Application.DiameterTree" />
       </list>
     </recent_temporary>
   </component>
@@ -246,6 +248,9 @@
       <workItem from="1756619930829" duration="11203000" />
       <workItem from="1756708176790" duration="2779000" />
       <workItem from="1756795272524" duration="2505000" />
+      <workItem from="1756807533518" duration="19000" />
+      <workItem from="1756875750282" duration="699000" />
+      <workItem from="1756958767293" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="完成了盛水最大面积">
       <option name="closed" value="true" />

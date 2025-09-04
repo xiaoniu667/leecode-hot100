@@ -18,7 +18,7 @@ import java.util.Map;
 public class SumOfRoad {
 
     /**
-     * 思路：利用前缀和解决，
+     * 思路：利用前缀和解决即可。通过dfs算法递归遍历+回溯  通过查看当前节点是否存在前缀和prevSum
      */
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
